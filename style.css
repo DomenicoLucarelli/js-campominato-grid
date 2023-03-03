@@ -75,3 +75,7 @@ footer{
     align-items: center;
 }
 
+.active{
+    background-color: orange;
+    cursor: pointer;
+}
