@@ -5,13 +5,33 @@ let innerContainerEl = document.getElementById('inner-container');
 
 startEl.addEventListener('click', function(){
 
-    for(let i = 1 ; i <= 100 ; i++){
+    createSquare(1,100,innerContainerEl)
+    
+    
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function createSquare (numMin,numMax,container){
+
+    for(let i = numMin ; i <= numMax ; i++){
 
         let squareEl = document.createElement('div');
         squareEl.classList.add('square');
         squareEl.innerHTML = i;
-        innerContainerEl.append(squareEl);
-        innerContainerEl.style.display = 'flex';
+        container.append(squareEl);
+        container.style.display = 'flex';
     }
-    
-})
+}
