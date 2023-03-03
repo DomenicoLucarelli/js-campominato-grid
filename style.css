@@ -33,10 +33,12 @@ img{
     display: flex;
     align-items: center;
     padding-right: 20px;
+    gap: 5px;
+
 }
 
 
-#start{
+#start, #difficult{
     padding: 5px 20px;
     font-weight: bold;
     cursor: pointer;
@@ -57,12 +59,13 @@ img{
 
     display: none;
     flex-wrap: wrap;
+    align-content: center;
     
 }
 
 .square{
-    width: 50px;
-    height: 50px;
+    /* width: calc(100% / 10);
+    height: calc(100% / 10); */
     border: 1px solid black;
     display: flex;
     justify-content: center;
