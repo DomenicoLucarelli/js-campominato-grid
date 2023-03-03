@@ -44,6 +44,18 @@ startEl.addEventListener('click', function(){
 
 // ---------------------------FUNCTION------------------------------------
 
+/**
+ * Dati il numero minimo di quadrati, il numero massimo di quadrati, il container che deve contenerli tutti 
+ * il numero di righe e il numero di colonne la funzione restituisce un quadrato con tanti quadrati all'interno
+ * quanti ne sono richiesti e li dispone secondo il numero di righe e colonne indicato.
+ * permette inoltre di togglare il colore al click del quadrato
+ * @param {any} numMin
+ * @param {any} numMax
+ * @param {any} container
+ * @param {any} numRow
+ * @param {any} numCol
+ * @returns {any}
+ */
 function createAndColorToggleSquare (numMin,numMax,container,numRow,numCol){
 
     for(let i = numMin ; i <= numMax ; i++){
