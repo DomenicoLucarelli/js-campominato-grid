@@ -3,7 +3,7 @@ let startEl = document.getElementById('start');
 let innerContainerEl = document.getElementById('inner-container');
 
 startEl.addEventListener('click', function(){
-    
+    innerContainerEl.style.display = 'flex';
     let difficultEl = document.getElementById('difficult').value;
     
     if(difficultEl == 'easy'){
@@ -52,11 +52,12 @@ function createAndColorToggleSquare (numMin,numMax,container,numRow,numCol){
         squareEl.addEventListener('click', function(){
 
             squareEl.classList.toggle('active')
+            console.log(squareEl.innerHTML)
         })
 
         container.append(squareEl);
 
     }
-    container.style.display = 'flex';
+    
     
 }
