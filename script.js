@@ -10,15 +10,15 @@ startEl.addEventListener('click', function(){
     
     if(difficultEl == 'easy'){
 
-        createSquare(1,100,innerContainerEl,10,10)
+        createAndColorToggleSquare(1,100,innerContainerEl,10,10)
 
     }else if(difficultEl == 'medium'){
 
-        createSquare(1,81,innerContainerEl,9,9)
+        createAndColorToggleSquare(1,81,innerContainerEl,9,9)
 
     }else{
 
-        createSquare(1,49,innerContainerEl,7,7)
+        createAndColorToggleSquare(1,49,innerContainerEl,7,7)
 
     }
    
@@ -44,7 +44,7 @@ startEl.addEventListener('click', function(){
 
 // ---------------------------FUNCTION------------------------------------
 
-function createSquare (numMin,numMax,container,numRow,numCol){
+function createAndColorToggleSquare (numMin,numMax,container,numRow,numCol){
 
     for(let i = numMin ; i <= numMax ; i++){
 
